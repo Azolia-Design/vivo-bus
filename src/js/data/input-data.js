@@ -28,4 +28,17 @@ const inputData = {
         }
     ]
 };
+
+const busMap = {
+    slots: [
+        {
+            id: 'A15',
+            isAvailable: true,
+            postions: [0,2]
+        }
+    ],
+    sizes: [
+        6,6
+    ]
+}
 export default inputData;
