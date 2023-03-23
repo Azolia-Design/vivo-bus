@@ -4,6 +4,10 @@
         .logo {
             grid-column: 1/7;
             height: 3.2rem;
+            img {
+                height: 100%;
+                width: auto;
+            }
         }
     }
 }
