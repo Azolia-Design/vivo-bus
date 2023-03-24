@@ -114,3 +114,30 @@
         }
     }
 }
+
+.seat {
+    width: 6.4rem;
+    height: 6.4rem;
+    border-radius: 1.6rem;
+    background-color: #F2F2F2;
+    color: #4A4A4A;
+    transition: $transition;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    text-decoration: none;
+    &:hover {
+        color: $cl-white;
+        background-color: #915FFB;
+    }
+    &.disabled {
+        background-color: #FAFAFA;
+        color: #C0C0C0;
+        pointer-events: none;
+    }
+    &.selected {
+        background-color: $cl-primary;
+        color: #ffffff;
+    }
+}

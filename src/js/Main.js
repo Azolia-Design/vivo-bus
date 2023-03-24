@@ -1,18 +1,15 @@
+import { useState } from "react"
 import UserInputs from "./components/UserInputs.js"
-
-function UserOutput() {
-    return (
-        <>
-        
-        </>
-    )
-}
-
-function getApi(event, fromData) {
-    console.log(fromData)
-}
+import UserOutputs from "./components/UserOutputs.js"
 
 export default function Main() {
+    let [api, setApi] = useState('')
+
+    function getApi(fromData) {
+        console.log(fromData)
+        setApi(fromData)
+    }
+
     return (
         <section className="sc-main">
             <div className="container grid">
@@ -20,7 +17,7 @@ export default function Main() {
                     <UserInputs onSubmit={getApi}/>
                 </div>
                 <div className="main-wrap">
-                    <UserOutput />
+                    <UserOutputs busData={api}/>
                 </div>
             </div>
         </section>

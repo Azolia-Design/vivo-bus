@@ -35,6 +35,23 @@ const busMap = {
             id: 'A15',
             isAvailable: true,
             postions: [0,2]
+        },
+        {
+            id: 'A15',
+            isAvailable: true,
+            postions: [0,2]
+        },{
+            id: 'A15',
+            isAvailable: true,
+            postions: [0,2]
+        },{
+            id: 'A15',
+            isAvailable: true,
+            postions: [0,2]
+        },{
+            id: 'A15',
+            isAvailable: true,
+            postions: [0,2]
         }
     ],
     sizes: [
