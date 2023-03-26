@@ -108,6 +108,138 @@
                 }
             }
         }
+        .outputs-container {
+            .bus-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 3.2rem;
+                padding-bottom: 3.2rem;
+                border-bottom: 1px solid #E4E7EC;
+                .txt {
+                    font-weight: 500;
+                    color: $cl-text-200;
+                }
+                
+                .bus-title {
+                    display: flex;
+                    column-gap: 1.6rem;
+                    align-items: center;
+                    .ic-wrap {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &.ic-bus {
+                            border-radius: .8rem;
+                            background: linear-gradient(89.15deg, #9747FF 0.24%, #3762FA 105.07%);
+                            img {
+                                width: 2.8rem;
+                                height: 2.8rem;
+                            }
+                        }
+                    }
+                }
+                .bus-time {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 1.2rem;
+                }
+            }
+            .bus-legends {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 3.2rem;
+                .txt {
+                    font-weight: 500;
+                }
+                .legend-items {
+                    display: flex;
+                    align-items: center;
+                    column-gap: 4rem;
+                    .legend-item {
+                        display: flex;
+                        align-items: center;
+                        column-gap: 1.6rem;
+                        .legend-ic {
+                            width: 3.2rem;
+                            height: 3.2rem;
+                            border-radius: .8rem;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: #F2F2F2;
+                            &::before {
+                                content: '';
+                                width: .6rem;
+                                height: .6rem;
+                                border-radius: 50%;
+                                background-color: #4A4A4A;
+                            }
+                            &.selected {
+                                background: $cl-primary;
+                                &::before {
+                                    background-color: $cl-white;
+                                }
+                            }
+                            &.disable {
+                                background: #FAFAFA;
+                                &::before {
+                                    background-color: #C0C0C0;
+                                }
+                            }
+                        }
+                        .txt {
+                            color: #667085;
+                        }
+                    }
+                }
+            }
+            .bus-map {
+                margin: 0 auto;
+                max-width: 96.4rem;
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                gap: 1.2rem;
+                .bus-map-entry {
+                    grid-column: 8/12;
+                    grid-row: 1/6;
+                    padding: 2rem 1.2rem;
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: center;
+                    text-align: center;
+                    color: #C0C0C0;
+                    border-bottom: 1px solid #AAAAAA;
+                }
+                .bus-map-driver {
+                    grid-column: 12/13;
+                    grid-row: 1/4;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    color: #C0C0C0;
+                    writing-mode: vertical-lr;
+                }
+                .bus-map-blocker {
+                    grid-column: 2/8;
+                    grid-row: 3/4;
+                }
+            }
+            .bus-register {
+                margin-top: 3.2rem;
+                padding-top: 3.2rem;
+                border-top: 1px solid #E4E7EC;
+                display: flex;
+                justify-content: center;
+                .txt.--28 {
+                    font-weight: 600;
+                    margin-bottom: 3.2rem;
+                    color: #535353;
+                }
+            }
+        }
         .btn-submit {
             align-self: flex-end;
             cursor: pointer;
